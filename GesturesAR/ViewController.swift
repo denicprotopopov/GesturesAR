@@ -14,8 +14,6 @@ class ViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
     
-   
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
