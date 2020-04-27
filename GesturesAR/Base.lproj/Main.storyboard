@@ -1,41 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iA5-7x-rgi">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Unknown-RND.ttf">
+            <string>Unknown-RND</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="1jH-M2-4Mj">
             <objects>
                 <viewController id="poj-b4-vJ3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Khg-2t-Gdd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bro-di-SiS">
-                                <rect key="frame" x="190" y="433" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Xc1-BH-M3H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-O5-Cea">
-                                <rect key="frame" x="186" y="538" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start2"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWu-O5-Cea">
+                                <rect key="frame" x="20" y="495" width="335" height="107.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yWu-O5-Cea" secondAttribute="height" multiplier="187:60" id="BUD-sn-Bn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Unknown-RND" family="Unknown" pointSize="17"/>
+                                <state key="normal" backgroundImage="button3"/>
                                 <connections>
                                     <segue destination="2tj-U3-dAK" kind="show" id="IxY-af-OqT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bro-di-SiS">
+                                <rect key="frame" x="20" y="417.5" width="335" height="107.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bro-di-SiS" secondAttribute="height" multiplier="187:60" id="JPk-ch-yhc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Unknown-RND" family="Unknown" pointSize="51"/>
+                                <state key="normal" backgroundImage="button1">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Xc1-BH-M3H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="goq-hh-7Xz" firstAttribute="bottom" secondItem="yWu-O5-Cea" secondAttribute="bottom" constant="20.5" id="ALe-8X-hlo"/>
+                            <constraint firstItem="yWu-O5-Cea" firstAttribute="height" secondItem="bro-di-SiS" secondAttribute="height" id="Dum-3a-twr"/>
+                            <constraint firstItem="goq-hh-7Xz" firstAttribute="trailing" secondItem="yWu-O5-Cea" secondAttribute="trailing" constant="20" id="UYh-af-ZMR"/>
+                            <constraint firstItem="yWu-O5-Cea" firstAttribute="leading" secondItem="goq-hh-7Xz" secondAttribute="leading" constant="20" id="bkP-49-Kja"/>
+                            <constraint firstItem="yWu-O5-Cea" firstAttribute="top" secondItem="bro-di-SiS" secondAttribute="bottom" constant="-30" id="gaR-5F-MUe"/>
+                            <constraint firstItem="bro-di-SiS" firstAttribute="leading" secondItem="goq-hh-7Xz" secondAttribute="leading" constant="20" id="hJ7-Mo-J1s"/>
+                            <constraint firstItem="goq-hh-7Xz" firstAttribute="trailing" secondItem="bro-di-SiS" secondAttribute="trailing" constant="20" id="r7E-bf-w1s"/>
+                            <constraint firstItem="yWu-O5-Cea" firstAttribute="width" secondItem="bro-di-SiS" secondAttribute="width" id="vWS-mY-IWV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="goq-hh-7Xz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1XC-DT-h4X"/>
+                    <navigationItem key="navigationItem" id="1XC-DT-h4X">
+                        <barButtonItem key="backBarButtonItem" title=" " id="a53-ix-vwa"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vux-OD-JkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,11 +73,11 @@
             <objects>
                 <viewController id="2tj-U3-dAK" customClass="SecondViewController" customModule="GesturesAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IgD-kF-JwG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3J5-Uw-qoD">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -76,11 +103,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GesturesAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-Kf-cmB">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -106,11 +133,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iA5-7x-rgi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wST-hP-aEW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="wST-hP-aEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.089396779730000001" green="0.38788864210000001" blue="0.16658759240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pLT-Yb-q97">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="poj-b4-vJ3" kind="relationship" relationship="rootViewController" id="9rz-3O-uT7"/>
                     </connections>
@@ -120,4 +152,8 @@
             <point key="canvasLocation" x="-626.08695652173913" y="135.9375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button1" width="1500" height="500"/>
+        <image name="button3" width="1500" height="500"/>
+    </resources>
 </document>
