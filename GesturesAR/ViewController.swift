@@ -14,6 +14,8 @@ import Vision
 
 class ViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
+    var runloopCoreMLUpdate = true
+    var runupdateCoreML = true
     
     private var serialQueue = DispatchQueue(label: "dispatchqueueml")
     private var visionRequests = [VNRequest]()
@@ -53,10 +55,19 @@ extension ViewController {
         setUpCoachingOverlay()
             
         }
+        func punchTheClown() {
+            
+            sceneView?.session.pause()
+            sceneView?.removeFromSuperview()
+            sceneView = nil
+            runloopCoreMLUpdate = false
+            runupdateCoreML = false
+
+        }
         
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(animated)
-            sceneView.session.pause()
+            punchTheClown()
         }
 }
 // MARK: - Setup
@@ -112,6 +123,7 @@ extension ViewController {
     }
     
     private func loopCoreMLUpdate() {
+        if !runloopCoreMLUpdate { return }
         serialQueue.async {
             self.updateCoreML()
             self.loopCoreMLUpdate()
@@ -124,6 +136,7 @@ extension ViewController {
 // MARK: - Private
 extension ViewController {
     private func updateCoreML() {
+        if !runupdateCoreML { return }
         let pixbuff : CVPixelBuffer? = (sceneView.session.currentFrame?.capturedImage)
         if pixbuff == nil { return }
         let ciImage = CIImage(cvPixelBuffer: pixbuff!)
