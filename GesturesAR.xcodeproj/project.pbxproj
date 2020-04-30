@@ -17,9 +17,9 @@
 		F84AE87B245778BB006D0290 /* Unknown-PX.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F84AE878245778BB006D0290 /* Unknown-PX.ttf */; };
 		F84AE87C245778BB006D0290 /* Unknown-RND.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F84AE879245778BB006D0290 /* Unknown-RND.ttf */; };
 		F8CE844E2456D46A00290919 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE844D2456D46A00290919 /* SecondViewController.swift */; };
-		F8D7B9FB244DF7C600B9CA9B /* example_5s0_hand_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F8D7B9FA244DF7C600B9CA9B /* example_5s0_hand_model.mlmodel */; };
 		F8D7B9FE244DFA1700B9CA9B /* letter.scn in Resources */ = {isa = PBXBuildFile; fileRef = F8D7B9FD244DFA1700B9CA9B /* letter.scn */; };
 		F8E5F2CA245086D70010E0FB /* word.scn in Resources */ = {isa = PBXBuildFile; fileRef = F8E5F2C9245086D70010E0FB /* word.scn */; };
+		F8EBB2E6245B3CF500853C8D /* MyGestureModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F8EBB2E5245B3CF500853C8D /* MyGestureModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +35,9 @@
 		F84AE878245778BB006D0290 /* Unknown-PX.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unknown-PX.ttf"; sourceTree = "<group>"; };
 		F84AE879245778BB006D0290 /* Unknown-RND.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unknown-RND.ttf"; sourceTree = "<group>"; };
 		F8CE844D2456D46A00290919 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F8D7B9FA244DF7C600B9CA9B /* example_5s0_hand_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = example_5s0_hand_model.mlmodel; sourceTree = SOURCE_ROOT; };
 		F8D7B9FD244DFA1700B9CA9B /* letter.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = letter.scn; sourceTree = "<group>"; };
 		F8E5F2C9245086D70010E0FB /* word.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = word.scn; sourceTree = "<group>"; };
+		F8EBB2E5245B3CF500853C8D /* MyGestureModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyGestureModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			children = (
 				F84AE87D245778C2006D0290 /* fonts */,
 				F8141A8F244CC9CA00DF2984 /* AppDelegate.swift */,
-				F8D7B9FA244DF7C600B9CA9B /* example_5s0_hand_model.mlmodel */,
+				F8EBB2E5245B3CF500853C8D /* MyGestureModel.mlmodel */,
 				F8141A91244CC9CA00DF2984 /* SceneDelegate.swift */,
 				F8D7B9FD244DFA1700B9CA9B /* letter.scn */,
 				F8E5F2C9245086D70010E0FB /* word.scn */,
@@ -174,9 +174,9 @@
 			files = (
 				F8141A94244CC9CA00DF2984 /* ViewController.swift in Sources */,
 				F8141A90244CC9CA00DF2984 /* AppDelegate.swift in Sources */,
+				F8EBB2E6245B3CF500853C8D /* MyGestureModel.mlmodel in Sources */,
 				F8141A92244CC9CA00DF2984 /* SceneDelegate.swift in Sources */,
 				F8CE844E2456D46A00290919 /* SecondViewController.swift in Sources */,
-				F8D7B9FB244DF7C600B9CA9B /* example_5s0_hand_model.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

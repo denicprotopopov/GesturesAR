@@ -82,7 +82,7 @@ extension ViewController {
     }
     
     private func setupML() {
-        guard let selectedModel = try? VNCoreMLModel(for: example_5s0_hand_model().model) else {
+        guard let selectedModel = try? VNCoreMLModel(for: MyGestureModel().model) else {
                 fatalError("Could not load model.")
         }
         
@@ -174,17 +174,28 @@ extension ViewController {
             let topPredictionScore:Float? = Float(topPrediction.components(separatedBy: ":")[1].trimmingCharacters(in: .whitespaces))
             
             if (topPredictionScore != nil && topPredictionScore! > 0.10) {
-                if topPredictionName == "FIVE-UB-RHand" {
+                if topPredictionName == "palm" {
                     
                     self.object.runAction(SCNAction.rotateBy(x: 0.0, y: 0.0, z: 1.0, duration: 200.0))
                     print("FIVE")
                     
                 }
                 
-                if topPredictionName == "fist-UB-RHand" {
+                if topPredictionName == "fist" {
                     self.object.removeAllActions()
                     print("FIST")
                     
+                }
+                
+                if topPredictionName == "no-hand" {
+                    print("NO HAND")
+                }
+                
+                if topPredictionName == "point-left" {
+                print("POINT LEFT")
+                }
+                if topPredictionName == "point-right" {
+                print("POINT RIGHT")
                 }
                 
             }
