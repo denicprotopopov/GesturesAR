@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F8141A8C244CC9CA00DF2984 /* GesturesAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GesturesAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8141A8C244CC9CA00DF2984 /* ISO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8141A8F244CC9CA00DF2984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8141A91244CC9CA00DF2984 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8141A93244CC9CA00DF2984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		F8141A8D244CC9CA00DF2984 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8141A8C244CC9CA00DF2984 /* GesturesAR.app */,
+				F8141A8C244CC9CA00DF2984 /* ISO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,7 +116,7 @@
 			);
 			name = GesturesAR;
 			productName = GesturesAR;
-			productReference = F8141A8C244CC9CA00DF2984 /* GesturesAR.app */;
+			productReference = F8141A8C244CC9CA00DF2984 /* ISO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.denisprotopopov.GesturesAR;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ISO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.denisprotopopov.GesturesAR;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ISO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
