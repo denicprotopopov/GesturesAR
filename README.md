@@ -1,6 +1,7 @@
-# ARKit + Core ML gesture controlled app
-Work in progress for my senior project
+# ISO prototype app: ARKit + Core ML
 
-Going to describe more soon ☺️
+This app provides two AR scenes: a portal and gesture controlled object. Gesture controller uses an ML model to recognize a user's gesture. Show your hand to start an animation and a fist to stop it.
+
 
 ![](media/1.gif)
+![](media/2.gif)
