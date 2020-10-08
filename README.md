@@ -4,4 +4,3 @@ This app provides two AR scenes: a portal and gesture controlled object. Gesture
 
 
 ![](media/1.gif)
-![](media/2.gif)
